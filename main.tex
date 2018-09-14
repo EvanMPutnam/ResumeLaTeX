@@ -9,15 +9,21 @@
 \itemsep=0in
 \parsep=0in
 
-
+ 
+ %Used LuaLaTeX to compile.
+ %Changes - Added Rockwell collins and reformatted to single page.
+ 
  
  % For some reason this gives me the format I want when included.  Will debug later...
-
 $ $
  
 
 \usepackage{fontspec}
-% \setmainfont[Ligatures=TeX]{HelveticalNeue.ttc}
+
+% \definefontfamily[myfamily][serif][Helvetica Neue]
+
+% \setsansfont{Helvetica Neue}
+
 \begin{document}
 \name{Evan Putnam \hspace{24.3em} \small github.com/EvanMPutnam }
 \address{(484) 554-8487\\ emp9173@rit.edu}
@@ -37,10 +43,12 @@ Proficient in C, Java, Python, SQL, Git, JetBrains IDE’s, Mac OS, Windows, and
 Experience in Swift, C\#, C++, Lua, Javascript, HTML, CSS, Bootstrap, MongoDB, Neo4J, Visual Studio, and Unity3D.
  
 \section{EXPERIENCE} 
-\textbf{Guardian Life IT and Shared Services Intern}, \textit{Bethlehem PA} \hfill Jun 2018-Current \\
+\textbf{Rockwell Collins Software Engineering Co-Op}, \textit{Cedar Rapids IA} \hfill Sept 2018 - Current \\
+Worked in the Display Application Subsystems team with a variety of languages and tools to support the development of software for aircraft display technologies.\\ [10pt]
+\textbf{Guardian Life IT and Shared Services Intern}, \textit{Bethlehem PA} \hfill Jun 2018 - Sept 2018 \\
 Worked on development of an enterprise Java web application that used Spring MVC, Bootstrap, and JQuery.  In addition created
 data analytics for software incident reports, wrote software to visualize that data, and automated database tasks.\\ [10pt]
-\textbf{RIT Computer Science Student Lab Instructor}, \textit{Rochester NY} \hfill Jan-May 2018 \\
+\textbf{RIT Computer Science Student Lab Instructor}, \textit{Rochester NY} \hfill Jan 2018 - May 2018 \\
 Helped students understand core concepts of CSII. Responsible for writing scripts
 to grade labs, conducting office hours for students with questions, and helping students
 with in-lab exercises.
@@ -53,30 +61,22 @@ Designed and Implemented an Augmented Reality application that won a 2018 WWDC S
 Designed and wrote software in Python for automation of Meade LX-200 telescope. Server device connects and sends commands, that are dictated by the client, to telescope via serial port over wireless network. Features movement with joystick and tracking of low earth orbit satellites with two line elements.
 \\ [10pt]
 \textbf{Kladoi Language Compiler}, \textit{SCHOOL PROJECT}\\
-As a final project for Programming Language Concepts a compiler written in Python was designed and implemented to convert a BASIC-like language to an assembly-like language.  It involved building a custom lexer and recursive descent parser, as well as creating abstract syntax trees for evaluation with the parser.
-\\ [10pt]
-\textbf{Sudoku Solver}, \textit{PERSONAL PROJECT}\\
-Designed and wrote software in Python for a console application that solves any 9x9 Sudoku puzzle with recursive backtracking.  It was then converted into a web application using Javascript, HTML, and CSS.
-
+As a final project for Programming Language Concepts a compiler written in Python was designed and implemented to convert a BASIC-like language to an assembly-like language.
 
 \section{ACTIVTIES}
 \textbf{RIT Space Exploration (RIT SPEX)}\\
 Treasurer
       \begin{enumerate}
-        \item[] Responsible for managing funds of RIT SPEX.
+        \item[] Responsible for managing team budgets and organization funds for RIT SPEX.
       \end{enumerate}
       
-Communication Sub-System Team Leader
+Communication Sub-System and \textdollar 50 Satellite Team Leader
       \begin{enumerate}
         \item[] Responsible for leading a team in the design of a communications sub-system for a small cube satellite.
         \item[] Gathered weather images from NOAA satellites in which antennas were designed and implemented. Wrote software for automation of process.
-      \end{enumerate}
-      
-
-\textdollar 50 Satellite Team Leader
-      \begin{enumerate}
         \item[] Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
       \end{enumerate}
+      
 
 \section{COURSEWORK}
 
@@ -99,3 +99,4 @@ Communication Sub-System Team Leader
  
 \end{resume}
 \end{document}
+
