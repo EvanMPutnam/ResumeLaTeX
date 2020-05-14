@@ -1,11 +1,17 @@
+% Author: Evan Putnam
+%   This is a resume template that I use for all my job applications.
+%   Font options are available below for windows/mac fonts (They may or may not work on your system)
+%   In addittion there are nice margin settings options and dedicated sections.
+%   There are comments throughout to help you complete a template
+
+
+% This imports some stuff from the res.cls file (attribution to Michael DeCorte)
 \documentclass[line, resmargin]{res}
+
+% Use some packages.
 \usepackage[inline]{enumitem}
 \usepackage{fontspec}
 
-% Author: Evan Putnam
-% This is a resume template that I use for all my job applications.
-% Font options are available below for windows/mac fonts (They may or may not work on your system)
-% In addittion there are nice margin settings options and dedicated sections.
 
 %%%Windows Font Compile Options%%%
 %\setmainfont[ BoldFont={Arialbd.ttf}, ItalicFont={Ariali.ttf},BoldItalicFont={Arialbi.ttf}]{Arial.ttf}
@@ -23,35 +29,46 @@
 \itemsep=0in
 \parsep=0in
 
- 
- % For some reason this gives me the format I want when included.  Will debug later...
- 
+
 \begin{document}
 
+% Header information.
+%
+% Keep your address off of your resume.  It takes up space.  They only need to know
+% how to contact you.  I like to put an email, a phone number, and a website link if you have one.
+% In a programmers case that may just be a github link.
+%
+% Replace with your details and edit the hspace-ing
 \name{Evan Putnam \hspace{24.6em} \small github.com/EvanMPutnam }
 \address{(484) 554-8487\\ emp9173@rit.edu}
 
 \begin{resume}
-\vspace{-7.5mm} %Can reduce space
+\vspace{-7.5mm} % Can reduce space
 
-%State your objective here
+% State your objective here.  Keep it brief, what are you looking to do with this resume?
 \section{OBJECTIVE}
 Fourth year Computer Science major looking to apply learned theory and obtain practical experience through full time employment.  Available January 2021.
 
-%This is my education
+% This is my education section.
+% Common advice is to remove GPA if under a 3.0
 \section{EDUCATION} 
  Rochester Institute of Technology \\
  Bachelor of Science in Computer Science, December 2020\\
  Minor in Communication\\
  \textbf{GPA:} 3.39
  
-%I personally like to have a skills section
+% I personally like to have a skills section.
+% For some resumes this may not be appropriate but for tech its always a good idea.
+% I like to put it towards the top, but it can also go later.
 \section{SKILLS}
 Proficient in C, Java, Python, SQL, Git, AWS, Mac OS, Windows, and Linux. \\
 Experience in Swift, C\#, C++, Lua, Javascript, HTML, CSS, Bootstrap, MongoDB, Neo4J, Visual Studio, and Unity3D.
  
  
- %Highlight experience!
+ % Highlight your job experience!
+ % Try to highlight what you did, tech you used, and try to be results driven if you can.
+ % I have heard different opinions on doing pre-form text like this and bullet points.
+ % Ultimately its whatever you think would be best.
 \section{EXPERIENCE} 
 \textbf{Collins Aerospace Software Engineering Co-Op}, \textit{Cedar Rapids IA} \hfill Sept 2018 - Current \\
 Worked in Military Avionics Flight Displays, on a DevOps team, to support the development of software for aircraft display technologies.  Focused primarily on automation of software verification efforts, development of tools to assist other engineers in day to day operations, and continuous build and test both locally as well as in the cloud with AWS.  In addition worked on virtual reality experiences of simulated display software.\\ [10pt]
@@ -61,7 +78,10 @@ data analytics for software incident reports, wrote software to visualize that d
 \vspace{-5.5mm}
 
 
-%Student involvement
+% Student involvement.
+% Don't list high school things here.
+% Clubs/Organizations/Student Ambassadors/Impressive items that you do
+% ouside of employment and classes and relate to the job you are looking for.
 \section{ACTIVITIES}
 \textbf{RIT Space Exploration (RIT SPEX)}\\
 Student Director
@@ -76,12 +96,11 @@ Communication Sub-System and \textdollar 50 Satellite Team Leader
         \item[] Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
       \end{enumerate}
       
-
 \textbf{Collins Aerospace Student Ambassador}\\
 Student Ambassador for Collins Aerospace at RIT.  Responsible for working in conjunction with HR at Collins in recruiting, hosting student events, and acting as a direct point of contact for interactions between Collins and RIT.
       
       
- %Most notable projects
+ % Most notable projects. 
 \section{PROJECTS}
 \textbf{Augmented Reality Star Viewer}, \textit{WWDC SCHOLARSHIP 2018}\\
 Designed and Implemented an Augmented Reality application that won a 2018 WWDC Scholarship from Apple.  The application was created in Swift and used data from the open source HYG-Star database to create an AR walkthrough of the known universe.
@@ -93,7 +112,9 @@ Designed and wrote software in Python for automation of Meade LX-200 telescope o
 As a final project for Programming Language Concepts a compiler written in Python was designed and implemented to convert a BASIC-like language to an assembly-like language.
 
 
-%Coursework
+% Coursework!  Try to highlight courses that would help you in your job.
+% Also keep this updated.  You shouldn't have Computer Science 1 on there
+% as a fourth year student for example.
 \section{COURSEWORK}
       \begin{enumerate*}[series=MyList, before=\hspace{-0.6ex}, label=\textbullet]
         \item Concepts of Parallel and Distributed Systems
