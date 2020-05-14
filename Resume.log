@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.10.16)  16 OCT 2019 21:45
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.10.16)  16 JAN 2020 15:11
  restricted system commands enabled.
 **Resume.tex
 (./Resume.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.153 seconds
+luaotfload | main : initialization completed in 0.124 seconds
 (./res.cls
 Document Style `res' <26 Sep 89>.
 Document Class: res 2000/05/19 v1.4b Resume class
@@ -430,7 +430,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 32.
 
-Overfull \vbox (109.67528pt too high) has occurred while \output is active []
+Overfull \vbox (121.67528pt too high) has occurred while \output is active []
 
 
 [1
@@ -443,13 +443,13 @@ Here is how much of LuaTeX's memory you used:
  428 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 49 glue_spec,
  6 attribute_list, 1 write nodes
-   avail lists: 1:1,2:253,3:111,4:7,5:29,6:23,7:3909,9:114,10:6,11:323
+   avail lists: 1:1,2:255,3:113,4:7,5:29,6:23,7:3892,9:115,10:6,11:317
  17145 multiletter control sequences out of 65536+600000
  48 fonts using 10461775 bytes
  52i,4n,71p,375b,429s stack positions out of 5000i,500n,10000p,200000b,100000s
 </System/Library/Fonts/HelveticaNeue.ttc></System/Library/Fonts/HelveticaNeue.tt
 c></System/Library/Fonts/HelveticaNeue.ttc>
-Output written on Resume.pdf (1 page, 41387 bytes).
+Output written on Resume.pdf (1 page, 41398 bytes).
 
 PDF statistics: 29 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
