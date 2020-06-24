@@ -2,7 +2,7 @@
 My resume in LaTeX.
 It uses res.cls for templating which was created by Michael DeCorte
 
-#Template:
+## Template:
 I created the files within to be fairly easy to adapt for your own resume.  This was done as an easy way for RIT Space Exploration members to create professional looking resumes quickly.  It is really as simple as just replacing my details with your own.
 
 ## Using the Template:
