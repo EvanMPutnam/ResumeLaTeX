@@ -1,8 +1,12 @@
 % Author: Evan Putnam
-%   This is a resume template that I use for all my job applications.
-%   Font options are available below for windows/mac fonts (They may or may not work on your system)
-%   In addittion there are nice margin settings options and dedicated sections.
-%   There are comments throughout to help you complete a template
+%	This is a resume template that I use for all my job applications.
+% 	Font options are available below for windows/mac fonts (They may or may not work on your system)
+%       In addittion there are nice margin settings options and dedicated sections.
+%       There are comments throughout to help you complete a template
+
+%
+%	TODO: Move the \def sections to a seperate file and import them.
+%
 
 
 % This imports some stuff from the res.cls file (attribution to Michael DeCorte)
@@ -11,15 +15,48 @@
 % Use some packages.
 \usepackage[inline]{enumitem}
 \usepackage{fontspec}
+\usepackage{ifplatform}
 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Font Configuration:	
+% 
+% All font settings within the document are within this section of code.  You can assign new fonts pretty easily by just
+% following the syntax for the commands, given its on your pc.
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Variable to control spacing of uppermost website link.  Variable changes based on font, see below.
+\def \USEDSPACE {0.0em}
 
 %%%Windows Font Compile Options%%%
-%\setmainfont[ BoldFont={Arialbd.ttf}, ItalicFont={Ariali.ttf},BoldItalicFont={Arialbi.ttf}]{Arial.ttf}
-%\setmainfont[ BoldFont={Calibrib.ttf}, ItalicFont={Calibrii.ttf},BoldItalicFont={Calibriz.ttf}]{Calibri.ttf} 
+\ifwindows
+	% Assign the calibri font + spacing.
+	%\def \USEDSPACE {\26.4em}
+	%\setmainfont[ BoldFont={Calibrib.ttf}, ItalicFont={Calibrii.ttf},BoldItalicFont={Calibriz.ttf}]{Calibri.ttf} 
+
+	% Assign the arial font + spacing.
+	\def \USEDSPACE {24.3em}
+	\setmainfont[ BoldFont={Arialbd.ttf}, ItalicFont={Ariali.ttf},BoldItalicFont={Arialbi.ttf}]{Arial.ttf}
+\fi
 
 %%%Mac Font Compile Options%%%
-\setmainfont[ BoldFont={Helvetica Neue Bold}, ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]{Helvetica Neue} 
+\ifmacosx
+	% Assign the Helvetica Neue font + spacing.
+	\def \USEDSPACE {24.6em}
+	\setmainfont[ BoldFont={Helvetica Neue Bold}, ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]{Helvetica Neue} 
+\fi
 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Further Configuration:
+%
+% Any additional config items beyond the font can go here.
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Margin settings
 \usepackage[bottom=0.0in, top=0.2in]{geometry}
@@ -29,108 +66,170 @@
 \itemsep=0in
 \parsep=0in
 
+% Global constants (You can define global constants for boolean values and use \ifdefined\VALUE to check them.
 
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%  Sections:	
+% 
+% If you want to create a new section then you just create a new \def item for it and fill it with whatever formatting
+% that you want inside.  Then it is supper easy to include/exclude sections at the bottom of the document.  Note
+% that the names for each resume section needs to be unique.
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def \HEADERS {
+	% Header information:
+	%
+	% Keep your address off of your resume.  It takes up space.  They only need to know
+	% how to contact you.  I like to put an email, a phone number, and a website link if you have one.
+	% In a programmers case that may just be a github link.
+	%
+	% Replace with your details and edit the hspace-ing
+	\name{Evan Putnam  \hspace{\USEDSPACE} \small github.com/EvanMPutnam } \address{(484) 554-8487\\ emp9173@rit.edu}
+}
+
+
+\def \OBJECTIVE {
+	% Objective:
+	% State your objective here.  Keep it brief, what are you looking to do with this resume?
+	\section{OBJECTIVE}
+	Fourth year Computer Science major looking to apply learned theory and obtain practical experience through full time employment.  Available January 2021.
+}
+
+\def \EDUCATION {
+	% This is my education section.
+	% Common advice is to remove GPA if under a 3.0
+	\section{EDUCATION} 
+ 	Rochester Institute of Technology \\
+ 	Bachelor of Science in Computer Science, December 2020\\
+ 	Minor in Communication\\
+ 	\textbf{GPA:} 3.39
+}
+
+\def \SKILLS {
+	% Skills:
+	% I personally like to have a skills section.
+	% For some resumes this may not be appropriate but for tech its always a good idea.
+	% I like to put it towards the top, but it can also go later.
+	\section{SKILLS}
+	Proficient in C, Java, Python, SQL, Git, AWS, Mac OS, Windows, and Linux. \\
+	Experience in Swift, C\#, C++, Lua, Javascript, HTML, CSS, Bootstrap, MongoDB, Neo4J, Visual Studio, and Unity3D.
+}
+
+\def \EXPERIENCE {
+	% Job Experience:
+	% Try to highlight what you did, tech you used, and try to be results driven if you can.
+	% I have heard different opinions on doing pre-form text like this and bullet points.
+	% Ultimately its whatever you think would be best and works for you.
+	\section{EXPERIENCE} 
+	\textbf{Collins Aerospace Software Engineering Co-Op}, \textit{Cedar Rapids IA} \hfill Sept 2018 - Current \\
+	Worked in Military Avionics Flight Displays, on a DevOps team, to support the development of software for aircraft display technologies.  Focused primarily on automation of software verification efforts, development of tools to assist 
+	other engineers in day to day operations, and continuous build and test both locally as well as in the cloud with AWS.  In addition worked on virtual reality experiences of simulated display software.\\ [10pt]
+	\textbf{Guardian Life IT and Shared Services Intern}, \textit{Bethlehem PA} \hfill Jun 2018 - Sept 2018 \\
+	Worked on development of an enterprise Java web application that used Spring MVC, Bootstrap, and JQuery.  In addition, created
+	data analytics for software incident reports, wrote software to visualize that data, and automated database tasks. \\
+	\vspace{-5.5mm}
+}
+
+\def \ACTIVITY {
+	% Student Involvement:
+	% Don't list high school things here.
+	% Clubs/Organizations/Student Ambassadors/Impressive items that you do
+	% ouside of employment and classes and relate to the job you are looking for.
+	\section{ACTIVITIES}
+	\textbf{RIT Space Exploration (RIT SPEX)}\\
+	Student Director
+		\begin{enumerate}
+			\item[]In charge of directing a student-faculty research group of 30+ students in various aerospace engineering projects. 
+		\end{enumerate}
+      
+	Communication Sub-System and \textdollar 50 Satellite Team Leader
+      	\begin{enumerate}
+        		\item[] Responsible for leading a team in the design of a communications sub-system for a small cube satellite.
+        		\item[] Gathered weather images from NOAA satellites in which antennas were designed and manufactured. Wrote software for automation of data collection.
+        		\item[] Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
+      	\end{enumerate}
+      
+	\textbf{Collins Aerospace Student Ambassador}\\
+	Student Ambassador for Collins Aerospace at RIT.  Responsible for working in conjunction with HR at Collins in recruiting, hosting student events, and acting as a direct point of contact for interactions between Collins and RIT.
+      
+}
+
+\def \PROJECTS {
+	% Projects:
+	% Try to include projects that are notable and pertain to the job you are looking to apply to.. 
+	\section{PROJECTS}
+	\textbf{Augmented Reality Star Viewer}, \textit{WWDC SCHOLARSHIP 2018}\\
+	Designed and Implemented an Augmented Reality application that won a 2018 WWDC Scholarship from Apple.  The application was created in Swift and used data from the open source HYG-Star database to create an AR walkthrough of the known universe.
+	\\ [10pt]
+	\textbf{Meade LX-200 Automation Software}, \textit{RIT SPEX}\\
+	Designed and wrote software in Python for automation of Meade LX-200 telescope over a wireless network.  Features joystick movement and tracking of low earth orbit satellites with two line elements.
+	\\ [10pt]
+	\textbf{Kladoi Language Compiler}, \textit{UNIVERSITY PROJECT}\\
+	As a final project for Programming Language Concepts a compiler written in Python was designed and implemented to convert a BASIC-like language to an assembly-like language.
+}
+
+
+\def \COURSES {
+	% Coursework:
+	% Try to highlight courses that would help you in your job.
+	% Also keep this updated.  You shouldn't have Computer Science 1 on there
+	% as a fourth year student for example.
+      \section{COURSEWORK}
+      \begin{enumerate*}[series=MyList, before=\hspace{-0.6ex}, label=\textbullet]
+        	\item Concepts of Parallel and Distributed Systems
+        	\item Concepts of Computer Systems
+        	\item Introduction to Artificial Intelligence
+        	\item Introduction to Computer Graphics
+        	\item Operating Systems
+        	\item Analysis of Algorithms
+        	\item Principles of Data Management
+        	\item Programming Language Concepts
+        	\item Introduction to Software Engineering
+        	\item Probability and Statistics
+        	\item Linear Algebra
+        	\item Business Communications
+      \end{enumerate*}
+	
+}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Document:
+% 
+% This is where items are actually included inside the document.
+% Everything leading up to it was just configuration and creating the content.
+% If you want it to appear it has to be listed here...
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-% Header information.
-%
-% Keep your address off of your resume.  It takes up space.  They only need to know
-% how to contact you.  I like to put an email, a phone number, and a website link if you have one.
-% In a programmers case that may just be a github link.
-%
-% Replace with your details and edit the hspace-ing
-\name{Evan Putnam \hspace{24.6em} \small github.com/EvanMPutnam }
-\address{(484) 554-8487\\ emp9173@rit.edu}
+% This should remain here in this location but feel free to modify the data.
+\HEADERS
 
 \begin{resume}
-\vspace{-7.5mm} % Can reduce space
+% Space between header and start of resume.  We are reducing it here.
+\vspace{-7.5mm}
 
-% State your objective here.  Keep it brief, what are you looking to do with this resume?
-\section{OBJECTIVE}
-Fourth year Computer Science major looking to apply learned theory and obtain practical experience through full time employment.  Available January 2021.
+% Choose which sections to include/exclude here.  You can also re-arrange the order of them.
+\OBJECTIVE
+\EDUCATION
+\SKILLS
+\EXPERIENCE
+\ACTIVITY
+\PROJECTS
+\COURSES
 
-% This is my education section.
-% Common advice is to remove GPA if under a 3.0
-\section{EDUCATION} 
- Rochester Institute of Technology \\
- Bachelor of Science in Computer Science, December 2020\\
- Minor in Communication\\
- \textbf{GPA:} 3.39
- 
-% I personally like to have a skills section.
-% For some resumes this may not be appropriate but for tech its always a good idea.
-% I like to put it towards the top, but it can also go later.
-\section{SKILLS}
-Proficient in C, Java, Python, SQL, Git, AWS, Mac OS, Windows, and Linux. \\
-Experience in Swift, C\#, C++, Lua, Javascript, HTML, CSS, Bootstrap, MongoDB, Neo4J, Visual Studio, and Unity3D.
- 
- 
- % Highlight your job experience!
- % Try to highlight what you did, tech you used, and try to be results driven if you can.
- % I have heard different opinions on doing pre-form text like this and bullet points.
- % Ultimately its whatever you think would be best.
-\section{EXPERIENCE} 
-\textbf{Collins Aerospace Software Engineering Co-Op}, \textit{Cedar Rapids IA} \hfill Sept 2018 - Current \\
-Worked in Military Avionics Flight Displays, on a DevOps team, to support the development of software for aircraft display technologies.  Focused primarily on automation of software verification efforts, development of tools to assist other engineers in day to day operations, and continuous build and test both locally as well as in the cloud with AWS.  In addition worked on virtual reality experiences of simulated display software.\\ [10pt]
-\textbf{Guardian Life IT and Shared Services Intern}, \textit{Bethlehem PA} \hfill Jun 2018 - Sept 2018 \\
-Worked on development of an enterprise Java web application that used Spring MVC, Bootstrap, and JQuery.  In addition, created
-data analytics for software incident reports, wrote software to visualize that data, and automated database tasks. \\
-\vspace{-5.5mm}
-
-
-% Student involvement.
-% Don't list high school things here.
-% Clubs/Organizations/Student Ambassadors/Impressive items that you do
-% ouside of employment and classes and relate to the job you are looking for.
-\section{ACTIVITIES}
-\textbf{RIT Space Exploration (RIT SPEX)}\\
-Student Director
-	\begin{enumerate}
-		\item[]In charge of directing a student-faculty research group of 30+ students in various aerospace engineering projects. 
-	\end{enumerate}
-      
-Communication Sub-System and \textdollar 50 Satellite Team Leader
-      \begin{enumerate}
-        \item[] Responsible for leading a team in the design of a communications sub-system for a small cube satellite.
-        \item[] Gathered weather images from NOAA satellites in which antennas were designed and manufactured. Wrote software for automation of data collection.
-        \item[] Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
-      \end{enumerate}
-      
-\textbf{Collins Aerospace Student Ambassador}\\
-Student Ambassador for Collins Aerospace at RIT.  Responsible for working in conjunction with HR at Collins in recruiting, hosting student events, and acting as a direct point of contact for interactions between Collins and RIT.
-      
-      
- % Most notable projects. 
-\section{PROJECTS}
-\textbf{Augmented Reality Star Viewer}, \textit{WWDC SCHOLARSHIP 2018}\\
-Designed and Implemented an Augmented Reality application that won a 2018 WWDC Scholarship from Apple.  The application was created in Swift and used data from the open source HYG-Star database to create an AR walkthrough of the known universe.
-\\ [10pt]
-\textbf{Meade LX-200 Automation Software}, \textit{RIT SPEX}\\
-Designed and wrote software in Python for automation of Meade LX-200 telescope over a wireless network.  Features joystick movement and tracking of low earth orbit satellites with two line elements.
-\\ [10pt]
-\textbf{Kladoi Language Compiler}, \textit{SCHOOL PROJECT}\\
-As a final project for Programming Language Concepts a compiler written in Python was designed and implemented to convert a BASIC-like language to an assembly-like language.
-
-
-% Coursework!  Try to highlight courses that would help you in your job.
-% Also keep this updated.  You shouldn't have Computer Science 1 on there
-% as a fourth year student for example.
-\section{COURSEWORK}
-      \begin{enumerate*}[series=MyList, before=\hspace{-0.6ex}, label=\textbullet]
-        \item Concepts of Parallel and Distributed Systems
-        \item Concepts of Computer Systems
-        \item Introduction to Artificial Intelligence
-        \item Introduction to Computer Graphics
-        \item Operating Systems
-        \item Analysis of Algorithms
-        \item Principles of Data Management
-        \item Programming Language Concepts
-        \item Introduction to Software Engineering
-        \item Probability and Statistics
-        \item Linear Algebra
-        \item Business Communications
-      \end{enumerate*}
-
- 
 \end{resume}
 \end{document}
+
+
+
+
+
+
