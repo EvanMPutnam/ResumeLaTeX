@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.1 (MiKTeX 2.9.7140 64-bit)  (format=lualatex 2020.7.17)  17 JUL 2020 15:55
+This is LuaTeX, Version 1.10.1 (MiKTeX 2.9.7140 64-bit)  (format=lualatex 2020.7.17)  14 SEP 2020 16:06
  restricted system commands enabled.
 **Resume.tex
 (./Resume.tex
@@ -51,7 +51,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.084 seconds
+luaotfload | main : initialization completed in 1.065 seconds
 (./res.cls
 Document Style `res' <26 Sep 89>.
 Document Class: res 2000/05/19 v1.4b Resume class
@@ -378,7 +378,7 @@ g;"
 ig;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \rmfamily on input line 43.
+LaTeX Info: Redefining \rmfamily on input line 41.
 
 ("C:/Users/Evan/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.s
 ty"
@@ -414,82 +414,82 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ("C:/Users/Evan/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.c
 fg"))
 No file Resume.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 210.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 210.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 210.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 210.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 210.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 210.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 210.
-LaTeX Font Info:    Redeclaring math accent \check on input line 210.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 210.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 210.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 210.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 210.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 208.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 208.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 208.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 208.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 208.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 208.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 208.
+LaTeX Font Info:    Redeclaring math accent \check on input line 208.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 208.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 208.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 208.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 208.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 210.
+(Font)              `operators' in the math version `normal' on input line 208.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial.ttf(0)/m/n on input line 210.
+(Font)                  OT1/cmr/m/n --> TU/Arial.ttf(0)/m/n on input line 208.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 210.
+(Font)              `operators' in the math version `bold' on input line 208.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/m/n on input line 210.
+(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/m/n on input line 208.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/m/n on input lin
-e 210.
+e 208.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial.ttf(0)/m/it on input line 210.
+(Font)                  OT1/cmr/m/it --> TU/Arial.ttf(0)/m/it on input line 208.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/bx/n on input line 210.
+(Font)                  OT1/cmr/bx/n --> TU/Arial.ttf(0)/bx/n on input line 208.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 210.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 208.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 210.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 208.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/Arial.ttf(0)/m/n --> TU/Arial.ttf(0)/bx/n on input li
-ne 210.
+ne 208.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial.ttf(0)/bx/it on input line 21
-0.
+(Font)                  OT1/cmr/bx/it --> TU/Arial.ttf(0)/bx/it on input line 20
+8.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 210.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 208.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 210.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 208.
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -534,13 +534,13 @@ Here is how much of LuaTeX's memory you used:
  428 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 49 glue_spec,
  6 attribute_list, 1 write nodes
-   avail lists: 2:243,3:113,4:13,5:49,6:22,7:3991,9:113,10:9,11:333
+   avail lists: 2:271,3:126,4:13,5:50,6:28,7:4109,9:137,10:9,11:340
  17466 multiletter control sequences out of 65536+200000
  38 fonts using 13292079 bytes
  47i,4n,70p,339b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/windows/fonts/ariali.ttf><c:/windows/fonts/arial.ttf><c:/windows/fonts/arial
 bd.ttf>
-Output written on Resume.pdf (1 page, 92267 bytes).
+Output written on Resume.pdf (1 page, 92317 bytes).
 
 PDF statistics: 27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

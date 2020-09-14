@@ -4,9 +4,6 @@
 %       In addittion there are nice margin settings options and dedicated sections.
 %       There are comments throughout to help you complete a template
 
-%
-%	TODO: Move the \def sections to a seperate file and import them.
-%
 
 
 % This imports some stuff from the res.cls file (attribution to Michael DeCorte)
@@ -16,6 +13,7 @@
 \usepackage[inline]{enumitem}
 \usepackage{fontspec}
 \usepackage{ifplatform}
+\setlist[itemize]{align=parleft,left=0pt..1em}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,7 +94,7 @@
 	% Objective:
 	% State your objective here.  Keep it brief, what are you looking to do with this resume?
 	\section{OBJECTIVE}
-	Fourth year Computer Science major looking to apply learned theory and obtain practical experience through full time employment.  Available January 2021.
+	Fifth year Computer Science major looking to apply learned theory and obtain practical experience through full time employment.  Available January 2021.
 }
 
 \def \EDUCATION {
@@ -131,7 +129,6 @@
 	\textbf{Guardian Life IT and Shared Services Intern}, \textit{Bethlehem PA} \hfill Jun 2018 - Sept 2018 \\
 	Worked on development of an enterprise Java web application that used Spring MVC, Bootstrap, and JQuery.  In addition, created
 	data analytics for software incident reports, wrote software to visualize that data, and automated database tasks. \\
-	\vspace{-5.5mm}
 }
 
 \def \ACTIVITY {
@@ -142,16 +139,17 @@
 	\section{ACTIVITIES}
 	\textbf{RIT Space Exploration (RIT SPEX)}\\
 	Student Director
-		\begin{enumerate}
-			\item[]In charge of directing a student-faculty research group of 30+ students in various aerospace engineering projects. 
-		\end{enumerate}
+		\begin{itemize}
+			\item In charge of directing a student-faculty research group of 30+ students in various aerospace engineering projects. 
+			\item Worked with faculty to provide opportunity and funding for student aerospace projects.
+		\end{itemize}
       
 	Communication Sub-System and \textdollar 50 Satellite Team Leader
-      	\begin{enumerate}
-        		\item[] Responsible for leading a team in the design of a communications sub-system for a small cube satellite.
-        		\item[] Gathered weather images from NOAA satellites in which antennas were designed and manufactured. Wrote software for automation of data collection.
-        		\item[] Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
-      	\end{enumerate}
+      	\begin{itemize}
+        		\item Responsible for leading a team in the design of a communications sub-system for a small cube satellite.
+        		\item Gathered weather images from NOAA satellites in which antennas were designed and manufactured. Wrote software for automation of data collection.
+        		\item Led a team in the design and preliminary construction of a small satellite based on design from the \textdollar 50SAT - Eagle2 project.
+      	\end{itemize}
       
 	\textbf{Collins Aerospace Student Ambassador}\\
 	Student Ambassador for Collins Aerospace at RIT.  Responsible for working in conjunction with HR at Collins in recruiting, hosting student events, and acting as a direct point of contact for interactions between Collins and RIT.
@@ -218,12 +216,19 @@
 
 % Choose which sections to include/exclude here.  You can also re-arrange the order of them.
 \OBJECTIVE
+\vspace{-1.5mm}
 \EDUCATION
+\vspace{-1.5mm}
 \SKILLS
+\vspace{-1.5mm}
 \EXPERIENCE
+\vspace{-5.5mm}
 \ACTIVITY
+\vspace{-1.5mm}
 \PROJECTS
+\vspace{-1.5mm}
 \COURSES
+\vspace{-1.5mm}
 
 \end{resume}
 \end{document}
